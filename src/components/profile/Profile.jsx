@@ -1,9 +1,10 @@
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import style from './Profile.module.css';
 
-export const Profile = ({ user: { username, tag, location, avatar, stats } }) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
+    
     return (<div className={style.profile} key = {tag}>
-  <div>
+  <div className={style.description}>
     <img
       src={avatar}
       alt={username}
@@ -15,15 +16,15 @@ export const Profile = ({ user: { username, tag, location, avatar, stats } }) =>
   </div>
 
   <ul className={style.stats}>
-    <li>
+    <li className = {style.list}>
       <span className={style.label}>Followers</span>
       <span className={style.quantity}>{stats.followers}</span>
     </li>
-    <li>
+    <li className = {style.list}>
       <span className={style.label}>Views</span>
       <span className={style.quantity}>{stats.views}</span>
     </li>
-    <li>
+    <li className = {style.list}>
       <span className={style.label}>Likes</span>
       <span className={style.quantity}>{stats.likes}</span>
     </li>
@@ -32,9 +33,9 @@ export const Profile = ({ user: { username, tag, location, avatar, stats } }) =>
 }
 
 Profile.propTypes = {
-    username: propTypes.string.isRequired,
-    tag: propTypes.string.isRequired,
-    location: propTypes.string.isRequired,
-    avatar: propTypes.string.isRequired,
-    stats: propTypes.objectOf(propTypes.number)
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.objectOf(PropTypes.number)
 }

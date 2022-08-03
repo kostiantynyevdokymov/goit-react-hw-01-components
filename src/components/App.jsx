@@ -1,6 +1,8 @@
 import { Profile } from "./profile/Profile";
+import {Statistics} from './statistics/Statistics'
 import user from '../data/user.json';
-import style from './utils/app.module.css'
+import data from 'data/data.json';
+import style from './utils/app.module.css';
 export const App = () => {
   return (
     <div className={style.main}>
@@ -11,7 +13,11 @@ export const App = () => {
   avatar={user.avatar}
   stats={user.stats}
   key={user.tag}
-/>
+      />
+      <Statistics
+        props={data}
+        title='Upload stats'
+      />
     </div>
   );
 };
