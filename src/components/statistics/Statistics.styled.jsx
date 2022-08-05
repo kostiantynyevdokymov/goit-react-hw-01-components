@@ -6,6 +6,7 @@ export const Card = styled.section`
   background-color: #fff;
   margin-top: 20px;
   border: 1px solid #000000;
+  box-shadow: 5px 5px 5px;
 `;
 
 export const Title = styled.h2`
