@@ -9,6 +9,7 @@ thead {
   background-color: rgb(109, 170, 240);
   color: white;
   border-style: solid;
+  border-color: black;
 }
 
 thead th:nth-child(1) {
@@ -27,6 +28,7 @@ th,
 td {
   padding: 20px;
   border-style: solid;
+  border-color: black;
 }
 
 tbody tr:nth-child(2n) {
