@@ -1,6 +1,7 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
-export const Card = styled.div` width: 300px;
+export const Card = styled.div`
+  width: 300px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -8,12 +9,13 @@ export const Card = styled.div` width: 300px;
   border-radius: 5px;
   text-align: center;
   border: 1px solid #000000;
-  box-shadow: 5px 5px 5px;`;
+  box-shadow: 5px 5px 5px;
+`;
 
 export const Description = styled.div`
- background-color: #ffffff;
+  background-color: #ffffff;
   text-align: center;
-  `;
+`;
 
 export const Username = styled.p`
   margin-bottom: 10px;
@@ -52,28 +54,28 @@ export const List = styled.li`
   width: 100px;
 
   :nth-child(2n) {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-}
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
 `;
 
 export const Label = styled.span`
- font-weight: bold;
+  font-weight: bold;
   opacity: 0.6;
   text-align: center;
 
   :not(:last-child) {
-      margin-right: 20px;
+    margin-right: 20px;
   }
 `;
- 
+
 export const Quantity = styled.span`
- font-weight: bold;
+  font-weight: bold;
   color: #000000;
 `;
 
 export const Avatar = styled.img`
- width: 150px;
+  width: 150px;
   height: 150px;
   border-radius: 50%;
   background-color: #e9e3e3;
